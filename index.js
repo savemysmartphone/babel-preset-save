@@ -8,14 +8,14 @@ module.exports = {
     require('babel-preset-stage-0')
   ],
   plugins: [
+    require('babel-plugin-transform-decorators-legacy').default,
+    [require('babel-plugin-typecheck').default, { disabled: { production: true } }],
     require('babel-plugin-add-module-exports'),
     [require('babel-plugin-transform-es2015-template-literals'), { spec: true }],
     require('babel-plugin-transform-es3-member-expression-literals'),
     require('babel-plugin-transform-es3-property-literals'),
     require('babel-plugin-transform-jscript'),
     require('babel-plugin-transform-exponentiation-operator'),
-    require('babel-plugin-transform-proto-to-assign'),
-    require('babel-plugin-transform-decorators-legacy').default,
-    [require('babel-plugin-typecheck').default, { disabled: { production: true } }]
+    require('babel-plugin-transform-proto-to-assign')
   ]
 };
