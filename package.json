@@ -1,7 +1,7 @@
 {
   "name": "babel-preset-save",
   "author": "",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "babel6 preset for Save.co projects",
   "main": "index.js",
   "repository": {
