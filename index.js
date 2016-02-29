@@ -15,6 +15,7 @@ module.exports = {
     require('babel-plugin-transform-exponentiation-operator'),
     require('babel-plugin-transform-proto-to-assign'),
     require('babel-plugin-transform-decorators-legacy'),
-    require('babel-plugin-add-module-exports')
+    require('babel-plugin-add-module-exports'),
+    [require('babel-plugin-typecheck'), { disabled: { production: true } }]
   ]
 };
