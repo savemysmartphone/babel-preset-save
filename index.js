@@ -9,7 +9,6 @@ module.exports = {
   ],
   plugins: [
     require('babel-plugin-transform-decorators-legacy').default,
-    [require('babel-plugin-typecheck').default, { disabled: { production: true } }],
     require('babel-plugin-add-module-exports'),
     [require('babel-plugin-transform-es2015-template-literals'), { spec: true }],
     require('babel-plugin-transform-es3-member-expression-literals'),
